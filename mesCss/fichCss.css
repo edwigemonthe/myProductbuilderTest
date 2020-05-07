@@ -1,0 +1,39 @@
+html{
+    height:100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+
+   
+}
+.box {
+	position: relative;
+	width: 1200px;
+	height: 200px;
+	background-color:cadetblue;
+}
+
+
+.transparence{
+opacity:0.95;
+}
+.bgDiv {
+   
+    height: 100%;
+    
+      width:50%;
+      margin-left:25%;
+
+    background-color: black;
+    text-decoration: solid;
+    text-decoration-color: white;
+}
+
+.bodyConnex {
+    
+    opacity: 0.70;
+}
+
+

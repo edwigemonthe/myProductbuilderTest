@@ -1,0 +1,47 @@
+
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+	    <link rel="stylesheet" href="mesCss/bootstrap.min.css" />
+	    <link rel="stylesheet" href="mesCss/fichCss.css" />
+		<link rel="stylesheet" href="mesCss/style.css" />
+
+	</head>
+	<body class=" bodyConnex">
+	 
+	    <div class="bgDiv" >
+	        <br /><br />
+	        <h1 class="bg-info text-center">Welcome to my DOM</h1>
+	        <br />
+	        <h4 class="text-white " align="center">      
+
+	        <div class="form-group">
+			    <label >Paste your code here</label>
+			    <textarea id="code" class="form-control" rows="3" placeholder="Write your code where"></textarea>
+			<div id="buttons">
+			    <input type="button" value="Analyse" onclick="analyseContent()"> 
+			    <input type="button" id ="clear"value="Clear" onclick="clearContent()"> 
+			</div>
+	        </div>
+	    </h4>
+	    </div>
+
+	</body>
+	</html>
+<script type="text/javascript">
+	var t = document.getElementById("code").value;
+function clearContent()
+{
+    document.getElementById("code").value='';
+}
+
+    var analyseContent = function (t) {
+	var parser = new DOMParser();
+	var doc = parser.parseFromString(t, 'text/html');
+	
+	return doc.body;
+};
+
+
+</script>
